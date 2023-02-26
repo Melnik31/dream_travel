@@ -100,4 +100,36 @@ a:hover {
   font-size: 1.2rem;
   width: 27rem;
   margin: 0.8rem 0 1.3rem;
+}
+
+/* Hot tours */
+.hot_tours {
+  margin: 6.25rem 0 6.25rem;
+}
+
+.tours_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.city_cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.city_cards .city_name {
+  font-size: 1.3rem;
+}
+.city_cards .country {
+  font-size: 0.9rem;
+}
+.city_cards img {
+  border-radius: 0.4rem;
 }/*# sourceMappingURL=style.css.map */
