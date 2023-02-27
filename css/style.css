@@ -239,6 +239,7 @@ a:hover {
 }
 .wrapper_form .window {
   flex: 3;
+  width: 30%;
 }
 .wrapper_form .form_wrap {
   flex: 7;
@@ -257,8 +258,4 @@ a:hover {
 .wrapper_form .form_wrap .form_title {
   text-transform: uppercase;
   margin-bottom: 4rem;
-}
-
-img {
-  width: 30%;
 }/*# sourceMappingURL=style.css.map */

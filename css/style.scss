@@ -236,6 +236,7 @@ a{
     text-align: center;
     .window{
         flex: 3;
+        width: 30%;
     }
     .form_wrap{
         flex: 7;
@@ -256,7 +257,4 @@ a{
         }
     }
 }
-img{
-    width: 30%;
-    //height: 100vh;
-}
+
