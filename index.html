@@ -17,8 +17,8 @@
             <div class="links">
                 <ul>
                     <a href="#"><li class="link">Главная</li></a>
-                    <a href="#"><li class="link">Горящие туры</li></a>
-                    <a href="#"><li class="link">О нас</li></a>
+                    <a href="#hot_tours"><li class="link">Горящие туры</li></a>
+                    <a href="#about"><li class="link">О нас</li></a>
                     <a href="#"><li class="link">Контакты</li></a>
                 </ul>
             </div>
@@ -26,36 +26,91 @@
         <div class="offer">
             <h1 class="title">Путешествуй с DreamTravel</h1>
             <h2 class="text">Отправим Вас в любую желаемую точку земного шара</h2>
-            <a href="#" class="y_btn">Выбрать направление</a>
+            <a href="#hot_tours" class="y_btn">Выбрать направление</a>
         </div>
     </div>
-    <div class="hot_tours">
+    <section class="hot_tours" id="hot_tours">
         <div class="tours_title">
-            <h1 class="title">Горящие туры 🔥 </h1>
+            <h2 class="title">Горящие туры 🔥</h2>
             <h3 class="text">Бронируй прямо сейчас по самой выгодной цене</h3>
         </div>
         <div class="city_cards">
             <div class="city city_1">
-                <img src="img/ny.png" alt="NY">
+                <img src="img/ny.png" alt="NY" class="city_img">
                 <h3 class="city_name">нью-йорк</h3>
                 <h3 class="country">США</h3>
+                <div class="hover_action">
+                    <a href="#" class="y_btn">Забронировать</a>
+                </div>
             </div>
             <div class="city city_2">
-                <img src="img/sharm.png" alt="sharm">
+                <img src="img/sharm.png" alt="sharm" class="city_img">
                 <h3 class="city_name">шарм-эль-шейх</h3>
                 <h3 class="country">Египет</h3>
+                <div class="hover_action">
+                    <a href="#" class="y_btn">Забронировать</a>
+                </div>
             </div>
             <div class="city city_3">
-                <img src="img/ny.png" alt="NY">
+                <img src="img/ny.png" alt="NY" class="city_img">
                 <h3 class="city_name">Барселона</h3>
                 <h3 class="country">испания</h3>
+                <div class="hover_action">
+                    <a href="#" class="y_btn">Забронировать</a>
+                </div>
             </div>
             <div class="city city_4">
-                <img src="img/genoa.png" alt="genoa">
+                <img src="img/genoa.png" alt="genoa" class="city_img">
                 <h3 class="city_name">Генуя</h3>
                 <h3 class="country">Италия</h3>
+                <div class="hover_action">
+                    <a href="#" class="y_btn">Забронировать</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="about" id="about">
+        <h2 class="about_title">НАШИ ПРЕИМУЩЕСТВА</h2>
+        <div class="container">
+            <div class="wrapper_left">
+                <div class="features">
+                    <img src="img/24-hours.png" alt="hours" class="feature_img">
+                    <h3 class="feature_text">Круглосуточная поддержка</h3>
+                </div>
+                <div class="features">
+                    <img src="img/price-tag.png" alt="price-tag" class="feature_img">
+                    <h3 class="feature_text">актуальные и приемленые цены</h3>
+                </div>
+                <div class="features">
+                    <img src="img/airplane.png" alt="airplane" class="feature_img">
+                    <h3 class="feature_text">ТУРЫ В 100+ СТРАН МИРА </h3>
+                </div>
+                <div class="features">
+                    <img src="img/locations.png" alt="planet" class="feature_img">
+                    <h3 class="feature_text">более 50 офисов во всем мире</h3>
+                </div>
+            </div>
+            <div class="wrapper_right">
+                <div class="big_logo">
+                    <img src="img/audio-waves 3.svg" alt="waves">
+                    <h3 class="name">DreamTravel</h3>
+                    <p class="tagline">путешествия не за горами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="singin" id="singin">
+        <div class="wrapper_form">
+            <img src="img/plane.jpg" alt="window" class="window">
+            <div class="form_wrap">
+                <h2 class="form_title">узнавай о свежих новостях первым!</h2>
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="text" name="name" placeholder="Введите имя">
+                    <input type="tel" name="phone" placeholder="Введите Email">
+                    <input type="email" name="email" placeholder="Введите номер телефона">
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

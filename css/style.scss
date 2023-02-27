@@ -9,7 +9,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 
 h1{
     font-weight: 600;
@@ -114,6 +116,9 @@ a{
     justify-content: center;
     text-align: center;
     margin-bottom: 3rem;
+    .title{
+        font-size: 2rem;
+    }
 }
 
 .city_cards{
@@ -125,8 +130,27 @@ a{
     align-items: center;
     text-align: center;
     .city{
-        img{
+        position: relative;
+        &:hover .city_img,{
+            opacity: .3;
+        }
+        &:hover .hover_action{
+            opacity: 1;
+        }
+        .city_img{
+           opacity: 1;
+           transition: all .4s ease;
+           backface-visibility: hidden;
            
+        }
+        .hover_action{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: .4s ease;
         }
     }
     .city_name{
@@ -139,4 +163,100 @@ a{
         border-radius: .4rem;
     }
     
+}
+
+/* About section */
+.about{
+    align-items: center;
+}
+.about_title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4.4rem;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.wrapper_left{
+    display: grid;
+    grid-template-rows: repeat(2, 3.4rem);
+    grid-template-columns: repeat(2, 17.75rem);
+    grid-gap: 5.6rem 5.5rem;
+    align-items: center;
+    h3{
+        text-transform: uppercase;
+    }
+}
+.features{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: .8rem;
+
+    .feature_img{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+.wrapper_right{
+    .big_logo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        img{
+            height: 5.3rem;
+            width: 5.3rem;
+        }
+        .name{
+            font-size: 1.9rem;
+        }
+    }
+    
+}
+
+/* Form section */
+.singin{
+    background: #161616;
+    color: #fff;
+    margin-top: 6.5rem;
+}
+.wrapper_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    .window{
+        flex: 3;
+    }
+    .form_wrap{
+        flex: 7;
+        input{
+            display: block;
+            margin: 0 auto;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            width: 50%;
+            background: #161616;
+            border: .5px solid #fff;
+            border-radius: .4rem;
+            color: #fff;
+        }
+        .form_title{
+            text-transform: uppercase;
+            margin-bottom: 4rem;
+        }
+    }
+}
+img{
+    width: 30%;
+    //height: 100vh;
 }
