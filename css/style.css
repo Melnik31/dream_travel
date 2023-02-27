@@ -255,6 +255,13 @@ a:hover {
   border-radius: 0.4rem;
   color: #fff;
 }
+.wrapper_form .form_wrap .submit_btn {
+  width: 20%;
+  text-transform: capitalize;
+  background: #fff;
+  color: #161616;
+  cursor: pointer;
+}
 .wrapper_form .form_wrap .form_title {
   text-transform: uppercase;
   margin-bottom: 4rem;
