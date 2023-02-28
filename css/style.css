@@ -261,8 +261,59 @@ a:hover {
   background: #fff;
   color: #161616;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+.wrapper_form .form_wrap .submit_btn:hover {
+  color: #37C1FE;
 }
 .wrapper_form .form_wrap .form_title {
   text-transform: uppercase;
   margin-bottom: 4rem;
+}
+
+/* Footer */
+.footer {
+  background: #161616;
+  color: #fff;
+}
+.footer a {
+  display: block;
+}
+
+.footer_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+  padding: 6.5rem 0;
+}
+.footer_wrap .logo_wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.footer_wrap .logo_wrap .waves {
+  width: 1.5rem;
+}
+
+.links_footer {
+  line-height: 1.7rem;
+}
+
+.info_action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.call_btn {
+  background: #fff;
+  color: black;
+  padding: 0.5rem 1.4rem;
+  border-radius: 0.4rem;
 }/*# sourceMappingURL=style.css.map */
