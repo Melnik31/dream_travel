@@ -81,8 +81,9 @@ a{
             flex-direction: row;
             gap: 4.25rem;
         }
-        
-
+    }
+    .hamburger_menu{
+        display: none;
     }
 }
 .offer{
@@ -237,6 +238,8 @@ a{
     .window{
         flex: 3;
         width: 30%;
+        filter: brightness(50%) blur(4px);
+        
     }
     .form_wrap{
         flex: 7;
@@ -312,4 +315,65 @@ a{
     color: black;
     padding: .5rem 1.4rem;
     border-radius: .4rem;
+}
+
+
+/* Responsive desing */
+
+@media screen and (max-width: 480px){
+    .links{
+        display: none;
+    }
+    .hamburger_menu{
+        display: block;
+    }
+
+    /* Tours */
+    .city_cards{
+        flex-direction: column;
+        gap: 3rem;   
+         
+    }
+
+    /* About */
+    .container{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .wrapper_left{
+        grid-template-columns: none;
+    }
+    .features{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Form */
+    .window{
+        display: none;
+        
+    }
+   .wrapper_form{
+    .form_wrap{
+        .form_title{
+            margin: 4rem 0 4rem;
+        }
+        input{
+            width: 65%;
+        }
+        .submit_btn{
+            width: 65%;
+        }
+    }
+   }
+
+   /* Footer */
+   .links_footer{
+    display: none;
+   }
+   .info_action{
+    .call_btn{
+        margin: .5rem 0;
+    }
+   }
 }

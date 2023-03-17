@@ -86,6 +86,9 @@ a:hover {
   flex-direction: row;
   gap: 4.25rem;
 }
+.nav .hamburger_menu {
+  display: none;
+}
 
 .offer {
   display: flex;
@@ -240,6 +243,7 @@ a:hover {
 .wrapper_form .window {
   flex: 3;
   width: 30%;
+  filter: brightness(50%) blur(4px);
 }
 .wrapper_form .form_wrap {
   flex: 7;
@@ -316,4 +320,51 @@ a:hover {
   color: black;
   padding: 0.5rem 1.4rem;
   border-radius: 0.4rem;
+}
+
+/* Responsive desing */
+@media screen and (max-width: 480px) {
+  .links {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+  /* Tours */
+  .city_cards {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  /* About */
+  .container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .wrapper_left {
+    grid-template-columns: none;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Form */
+  .window {
+    display: none;
+  }
+  .wrapper_form .form_wrap .form_title {
+    margin: 4rem 0 4rem;
+  }
+  .wrapper_form .form_wrap input {
+    width: 65%;
+  }
+  .wrapper_form .form_wrap .submit_btn {
+    width: 65%;
+  }
+  /* Footer */
+  .links_footer {
+    display: none;
+  }
+  .info_action .call_btn {
+    margin: 0.5rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
